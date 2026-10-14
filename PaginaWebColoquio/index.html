@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio del Coloquio Interinstitucional de Matemáticas: próximas charlas, archivo de sesiones, redes sociales y contacto.">
+  <meta name="theme-color" content="#11263d">
+  <title>Coloquio Interinstitucional de Matemáticas</title>
+
+  <!-- Favicon matemático autocontenido; las imágenes visibles se cargan desde img/. -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2311263d'/%3E%3Cpath d='M18 19h28M18 45h28M22 13l20 38M42 13 22 51' stroke='%23f3b33d' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header" id="inicio">
+    <div class="institution-bar" aria-label="Instituciones participantes">
+      <div class="container institution-bar__inner">
+        <p>Una colaboración académica entre</p>
+        <div class="institution-logos">
+          <img src="img/logoudg.png" alt="Universidad de Guadalajara">
+          <img src="img/logouds.png" alt="Universidad de Sonora">
+          <img src="img/logouagro.png" alt="Universidad Autónoma de Guerrero">
+        </div>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <div class="container main-nav__inner">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand__mark" aria-hidden="true">∑</span>
+          <span class="brand__text">
+            <strong>CIM</strong>
+            <small>Coloquio Interinstitucional de Matemáticas</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Abrir menú</span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#proximas">Inicio</a>
+          <a href="#anteriores">Charlas anteriores</a>
+          <a href="#redes">Redes sociales</a>
+          <a href="#acerca">Acerca del CIM</a>
+          <a href="#contacto">Contacto</a>
+          <button class="theme-toggle" type="button" aria-label="Cambiar a tema oscuro" title="Cambiar tema">
+            <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">Ciclo 2026 II</p>
+          <h1>Coloquio Interinstitucional de Matemáticas</h1>
+          <p>Un espacio de encuentro para compartir investigación, divulgación y nuevas ideas en ciencias y matemáticas.</p>
+          <a class="button button--primary" href="#proximas">Ver próximas charlas</a>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="formula formula--one">f(x)</div>
+          <div class="formula formula--two">∞</div>
+          <div class="formula formula--three">∫</div>
+          <div class="orbit orbit--large"></div>
+          <div class="orbit orbit--small"></div>
+          <div class="coordinate-lines"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="section section--upcoming" id="proximas" aria-labelledby="proximas-titulo">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Agenda</p>
+            <h2 id="proximas-titulo">Próximas charlas</h2>
+          </div>
+          <p>Selecciona el nombre de la persona ponente para consultar el cartel. El título enlaza a la transmisión cuando está disponible.</p>
+        </div>
+
+        <!-- JavaScript inserta aquí las charlas del archivo Próximas Charlas.xlsx. -->
+        <div class="talk-grid talk-grid--upcoming" id="upcoming-talks" aria-live="polite"></div>
+        <noscript>
+          <p class="notice">Activa JavaScript para visualizar la agenda y los carteles.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <section class="section section--archive" id="anteriores" aria-labelledby="anteriores-titulo">
+      <div class="container">
+        <div class="section-heading section-heading--with-action">
+          <div>
+            <p class="eyebrow">Archivo audiovisual</p>
+            <h2 id="anteriores-titulo">Charlas anteriores</h2>
+          </div>
+          <button class="button button--outline" id="toggle-periods" type="button" aria-expanded="false">
+            Mostrar todos los periodos
+          </button>
+        </div>
+
+        <!-- Los periodos se generan en orden descendente desde script.js. -->
+        <div class="period-list" id="past-talks"></div>
+      </div>
+    </section>
+
+    <section class="section section--social" id="redes" aria-labelledby="redes-titulo">
+      <div class="container social-layout">
+        <div>
+          <p class="eyebrow">Mantente al día</p>
+          <h2 id="redes-titulo">Redes sociales</h2>
+          <p>Sigue las transmisiones, consulta avisos y conoce las próximas actividades del coloquio.</p>
+        </div>
+
+        <div class="social-grid" aria-label="Canales oficiales del coloquio">
+          <a class="social-card" href="https://www.youtube.com/@semiinterdemate/videos" target="_blank" rel="noopener noreferrer">
+            <img src="img/logoyoutube.png" alt="" aria-hidden="true">
+            <span><strong>YouTube</strong><small>Ver las charlas</small></span>
+          </a>
+          <a class="social-card" href="https://www.facebook.com/coloquiointerinstitucionaldematematicas" target="_blank" rel="noopener noreferrer">
+            <img src="img/logofacebook.png" alt="" aria-hidden="true">
+            <span><strong>Facebook</strong><small>Noticias y convocatorias</small></span>
+          </a>
+          <a class="social-card" href="https://www.instagram.com/coloquiointermate?stkn=dHg2cTh6NGlhMXI3" target="_blank" rel="noopener noreferrer">
+            <img src="img/logoinstagram.png" alt="" aria-hidden="true">
+            <span><strong>Instagram</strong><small>Contenido del CIM</small></span>
+          </a>
+          <a class="social-card" href="mailto:semiinterdemate@gmail.com">
+            <img src="img/logogmail.png" alt="" aria-hidden="true">
+            <span><strong>Correo</strong><small>semiinterdemate@gmail.com</small></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--speaker" id="ponente" aria-labelledby="ponente-titulo">
+      <div class="container speaker-callout">
+        <div>
+          <p class="eyebrow">Participa</p>
+          <h2 id="ponente-titulo">¿Quieres ser ponente?</h2>
+          <p>Comparte tu trabajo con nuestra comunidad interinstitucional.</p>
+        </div>
+        <a class="button button--light" href="mailto:semiinterdemate@gmail.com?subject=Quiero%20participar%20como%20ponente%20del%20CIM">
+          Escríbenos por correo
+        </a>
+      </div>
+    </section>
+
+    <section class="section section--about" id="acerca" aria-labelledby="acerca-titulo">
+      <div class="container about-grid">
+        <article>
+          <p class="eyebrow">Nuestro proyecto</p>
+          <h2 id="acerca-titulo">Acerca del CIM</h2>
+          <p>El Coloquio Interinstitucional de Matemáticas es un proyecto de cooperación entre tres universidades: la Universidad de Guadalajara, la Universidad Autónoma de Guerrero y la Universidad de Sonora. Su propósito es divulgar y difundir las ciencias y las matemáticas.</p>
+        </article>
+
+        <aside class="committee" aria-labelledby="comite-titulo">
+          <h3 id="comite-titulo">Comité organizador</h3>
+          <ul>
+            <li><strong>Dra. Mayra Rosalia Tocto Erazo</strong><span>UNISON</span></li>
+            <li><strong>Dr. Luguis de los Santos Baños</strong><span>UdG</span></li>
+            <li><strong>Dr. Jair J. Pineda Pineda</strong><span>UAGro</span></li>
+            <li><strong>Dr. Manuel Adrian Acuña Zagarra</strong><span>UNISON</span></li>
+            <li><strong>M.C. María Guadalupe Magaña Chávez</strong><span>UdG</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">CIM</p>
+        <p>Coloquio Interinstitucional de Matemáticas</p>
+      </div>
+      <div>
+        <p class="footer-label">Contacto</p>
+        <a href="mailto:semiinterdemate@gmail.com">semiinterdemate@gmail.com</a>
+      </div>
+      <p class="copyright">© <span id="current-year"></span> CIM</p>
+    </div>
+  </footer>
+
+  <!-- Ventana emergente accesible para mostrar los carteles de las charlas. -->
+  <dialog class="poster-modal" id="poster-modal" aria-labelledby="modal-title">
+    <div class="poster-modal__header">
+      <div>
+        <p class="eyebrow">Información de la charla</p>
+        <h2 id="modal-title">Cartel</h2>
+      </div>
+      <button class="modal-close" type="button" aria-label="Cerrar cartel">×</button>
+    </div>
+    <div class="poster-modal__body">
+      <img id="modal-poster" src="img/placeholder-cartel.png" alt="">
+    </div>
+  </dialog>
+
+  <button class="back-to-top" type="button" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
+</body>
+</html>
