@@ -9,15 +9,6 @@
 const upcomingTalks = [
 
   {
-    date: "2026-10-28",
-    speaker: "Dr. Alfredo González-Calderón",
-    title: "Compresión de memoria en ecuaciones diferenciales fraccionarias",
-    photo: "platica_2026b_2_foto.jpg",
-    poster: "platica_2026b_2.jpg",
-    youtube: "Pendiente",
-    period: "2026 II"
-  },
-  {
     date: "2026-11-11",
     speaker: "Pendiente",
     title: "Pendiente",
@@ -48,7 +39,7 @@ const upcomingTalks = [
 
 // Registros tomados de “Charlas anteriores.xlsx”.
 const pastTalks = [
-   /* { date: "2026-10-28", speaker: "Dr. Alfredo González-Calderón", title: "Compresión de memoria en ecuaciones diferenciales fraccionarias", photo: "platica_2026b_2_foto.jpg", poster: "platica_2026b_2.jpg", youtube: "https://www.youtube.com/watch?v=iTp6G-_ohWw", period: "2026 II" },*/
+  { date: "2026-10-28", speaker: "Dr. Alfredo González-Calderón", title: "Compresión de memoria en ecuaciones diferenciales fraccionarias", photo: "platica_2026b_2_foto.jpg", poster: "platica_2026b_2.jpg", youtube: "https://www.youtube.com/watch?v=QEAolXFYpa4", period: "2026 II" },
   { date: "2026-10-14", speaker: "M.C. María Guadalupe Magaña Chávez", title: "Autómatas Celulares Perezosos: idempotencia y dinámica", photo: "platica_2026b_1_foto.jpg", poster: "platica_2026b_1.jpg", youtube: "https://www.youtube.com/watch?v=iTp6G-_ohWw", period: "2026 II" },
   { date: "2023-04-19", speaker: "Dr. Alonso Castillo Ramírez", title: "Una generalización de los autómatas celulares", photo: "platica_2023_1_foto.jpg", poster: "platica_2023_1.jpg", youtube: "https://www.youtube.com/watch?v=w68Ukzn_5m8&t=2768s", period: "2023 I" },
   { date: "2023-05-05", speaker: "Dra. Denisse García Beltrán", title: "Trivialidad de la Primera Cohomología de Poisson de Álgebras de Extensión Trivial", photo: "platica_2023_2_foto.jpg", poster: "platica_2023_2.jpg", youtube: "https://www.youtube.com/live/d6T-4vr7sa0?si=KMmI57zQHYEqleXy", period: "2023 I" },
