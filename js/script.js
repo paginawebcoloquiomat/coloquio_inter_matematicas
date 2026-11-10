@@ -10,10 +10,10 @@ const upcomingTalks = [
 
   {
     date: "2026-11-11",
-    speaker: "Pendiente",
-    title: "Pendiente",
-    photo: "platica_2026b_n_foto.jpeg",
-    poster: "platica_2026b_n.jpeg",
+    speaker: "Dr. Román Zúñiga Macías",
+    title: "Distancias que importan: cuantificando el acceso a salud y educación superior",
+    photo: "platica_2026b_3_foto.jpg",
+    poster: "platica_2026b_3.jpg",
     youtube: "Pendiente",
     period: "2026 II"
   },
